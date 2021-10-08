@@ -1,9 +1,10 @@
-// import functions and grab DOM elements
+const Button = document.getElementById('generate');
+const randomNum = document.getElementById('random-num');
 
-// initialize global state
+const randomNumGenerator = (Math.random());
+console.log(randomNumGenerator);
 
-// set event listeners 
-// get user input
-// use user input to update state 
-// update DOM to reflect the new state
+Button.addEventListener('click', () => {
+    console.log('click');
 
+})
