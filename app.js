@@ -1,10 +1,13 @@
 const Button = document.getElementById('generate');
 const randomNum = document.getElementById('random-num');
 
-const randomNumGenerator = (Math.random());
-console.log(randomNumGenerator);
+function randomNumGenerator() {
+    const randomNumGenerator = (Math.random());
+    return randomNumGenerator;
+}
 
 Button.addEventListener('click', () => {
-    console.log('click');
+    const randomNumGen = randomNumGenerator();
+    randomNum.textContent = randomNumGen;
 
-})
+});
